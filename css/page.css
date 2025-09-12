@@ -1,0 +1,74 @@
+/* .page-header{
+    background-color: #373737;
+} */
+.page-header-content{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-header-content div{
+    margin-left: 20px;
+}
+.story-poster{
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.story-poster img{
+    display: flex;
+    justify-content: center;
+    width: 340px;
+}
+.story-info-list{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.story-info-list li{
+    background-color: #373737;
+    padding: 16px;
+    border-radius: 8px;
+}
+.story-info-list h3{
+    width: 180px;
+    background-color: #01c2af;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+.story-info-list p{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.btn-reade-story{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f79f23;
+    gap: 4px;
+    color: #000;
+    font-weight: 600;
+}
+.btn-bokmark-list{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12px;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f79f23;
+    gap: 4px;
+    color: #000;
+    font-weight: 600;
+    border: none;
+}

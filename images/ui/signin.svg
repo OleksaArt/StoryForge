@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_1" data-name="Шар_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 323 397">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: orange;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M151.3,5h127.8c21.1,0,38.2,17.2,38.2,38.5v309.3c0,21.3-17.1,38.5-38.2,38.5h-127.8"/>
+  <path class="st0" d="M117.7,259.1l95.3-55.5c4.3-2.5,4.3-8.7,0-11.2l-95.3-55.5"/>
+  <path class="st0" d="M213.5,198.1l-208.5-1"/>
+</svg>

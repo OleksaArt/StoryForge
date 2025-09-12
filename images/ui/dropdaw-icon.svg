@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.41 100.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_1-2" data-name="Шар 1">
+    <g>
+      <line class="cls-1" x1="6" y1="6" x2="145.41" y2="6"/>
+      <line class="cls-1" x1="6" y1="50.38" x2="145.41" y2="50.38"/>
+      <line class="cls-1" x1="6" y1="94.76" x2="145.41" y2="94.76"/>
+    </g>
+  </g>
+</svg>

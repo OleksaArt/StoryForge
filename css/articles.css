@@ -1,0 +1,35 @@
+body{
+    background-color: #373737;
+}
+.forum-articles-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.articles-box{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 80px;
+    width: 600px;
+    height: 400px;
+    background-color: #0b0a0b;
+    padding: 40px;
+    border-radius: 8px;
+    border-left: 12px solid #01c2af;
+}
+.articles-box-poster img{
+    width: 200px;
+}
+.articles-box-text{
+    margin-left: 20px;
+}
+.articles-box-text p{
+    margin-top: 10px;
+    height: 94px;
+    overflow: hidden;
+}

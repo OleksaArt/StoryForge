@@ -1,0 +1,91 @@
+body{
+    background-color: #373737;
+}
+fieldset{
+    border: none;
+}
+h1{
+    margin-top: 80px;
+    display: flex; 
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.form-feadback-box{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 40px 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.form-feadback-box input{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background: none;
+    padding: 12px ;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    color: #f79f23;
+    transition: border-color, 0.8s;
+    outline: none;
+}
+.form-feadback-box input:hover{
+    border-color: #FB6212;
+}
+.form-feadback-box input:active{
+    border-color: #FB6212;
+}
+.form-feadback-box input::placeholder{
+    color:#fff;
+    font-family: "Marmelad" , sans-serif;
+}
+.form-feadback-box button[type="submit"]{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 340px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: #ffa500;
+    border: none;
+    transition: backgroud-color, 0.8s;
+    cursor: pointer;
+}
+.form-feadback-box button:hover{
+    background-color: #ff8c00;
+}
+
+.form-feadback-box textarea{
+    margin-top: 20px;
+    width: 360px;
+    height: 200px;
+    background: none;
+    padding: 20px;
+    color: #f79f23;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.form-feadback-box textarea:hover{
+    border-color: #FB6212;
+}
+.form-feadback-box textarea:active{
+    border-color: #FB6212;
+}
+.form-feadback-box textarea::placeholder{
+    padding: 20px;
+    color:#fff;
+    font-family: "Marmelad" , sans-serif;
+}

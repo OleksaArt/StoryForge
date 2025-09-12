@@ -1,0 +1,91 @@
+body{
+  background-color: #373737;
+}
+.main{
+    margin-bottom: 40px;
+}
+.about-box-section-1,
+.about-box-section-3{
+    width: 800px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #0b0a0b;
+    padding: 40px;
+    border-left: 12px solid #01c2af;
+    border-radius: 4px 2px 2px 4px;
+}
+
+.about-box-section-1 div h1{
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+}
+.about-box-section-contacs p,
+.about-box-section-1 div p, 
+.about-box-section-2 p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.about-box-section-4,
+.about-box-section-2{
+    width: 800px;
+    background-color: #0b0a0b;
+    padding: 40px;
+    display: flex;
+    justify-self: flex-end;
+    margin-top: 40px;
+    margin-right: 40px;
+    border-right: 12px solid #f79f23;
+    border-radius: 2px 4px 4px 2px;
+}
+.about-box-section-4 div{
+    width: 800px;
+}
+.about-box-section-contacs h2,
+.about-box-section-3 h2,
+.about-box-section-2 h2,
+.about-box-section-4 h2{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+.about-box-section-4 ul,
+.about-box-section-3 ul,
+.about-box-section-2 ul{
+    margin-top: 20px;
+    list-style: disc;
+}
+.about-box-section-4 ul li,
+.about-box-section-3 ul li,
+.about-box-section-2 ul li{
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.about-box-section-contacs{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 40px;
+    background-color: #0b0a0b;
+    padding: 40px;
+    border-bottom: 12px solid #01c2af;
+    border-radius: 2px 2px 4px 4px;
+}
+.contact-btn{
+    background-color: #f79f23;
+    color: #0b0a0b;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 160px;
+    padding: 8px 16px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.24 125.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #01c2af;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_2-2" data-name=" Шар 2">
+    <path class="cls-1" d="M10.8,91.31l37.13,4.43c.15.02.29.07.41.14l40.41,25.2c.65.41,1.5-.05,1.53-.82l.57-18.29c.02-.56.49-.99,1.04-.97l28.64,1.22c.52.02.98-.37,1.04-.89l8.66-76.82c.06-.53-.31-1.02-.84-1.1L5.15,4.01c-.63-.1-1.2.42-1.15,1.06l5.93,85.32c.03.48.4.87.88.92h-.01Z"/>
+  </g>
+</svg>

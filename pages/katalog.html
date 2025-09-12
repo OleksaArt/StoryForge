@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="favicon" rel="icon" href="/images/ui/logo-favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/katalog.css">
+    <title>StoryForge - Каталог історій</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="nav-site">
+                    <div class="logo-site">
+                        <a href="/index.html">
+                            <picture>
+                                <img src="/images/ui/logo-site.svg" alt="logo-site">
+                            </picture>
+                        </a>
+                    </div>
+                    <ul class="nav-site-list">
+                        <li>
+                            <a href="/pages/about.html">
+                                <img src="/images/ui/briefcase-white.svg" alt="about-icon">
+                                <span>Про нас</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/articles.html">
+                                <img src="/images/ui/journal-richtext.svg" alt="articles-icon">
+                                <span>Форум</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/contacts.html">
+                                <img src="/images/ui/send.svg" alt="contacs-icons">
+                                <span>Контакти</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/gallery.html">
+                                <img src="/images/ui/union.svg" alt="gallery-icon">
+                                <span>Арт галерея</span></a>
+                        </li>
+                        <li><a href="/pages/katalog.html">
+                                <img src="/images/ui/funnel.svg" alt="katalog-icon">
+                                <span>Каталог</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-user">
+                    <form action="#" method="get" class="search-form">
+                        <fieldset>
+                            <div class="search-box">
+                                <input type="search" placeholder="Введіть пошуковий запит">
+                                <img src="/images/ui/search-icon.svg" alt="search-icon">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="user-box">
+                        <a href="/pages/signin.html" class="btn-user-signin">
+                            <img src="/images/ui/person.svg" alt="signin-icon">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="katalog-box">
+                <div class="filter">
+                    <hr>
+                    <button onclick="filterCategory('all')">Всі</button>
+                    <button onclick="filterCategory('manhwa')">Манхва</button>
+                    <button onclick="filterCategory('manga')">Манга</button>
+                    <button onclick="filterCategory('manhua')">Маньхва</button>
+                    <hr>
+                </div>
+                    <div class="katalog-box">
+                        <div class="item-box" data-category="manhwa">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манхва</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манхва</strong> (корейською: 만화) — це корейські комікси або графічні новели.
+                                        Вона є аналогом манґи (японські комікси) та маньхуа (китайські комікси).
+                                    </p>
+                                    <h4>Основні риси:</h4>
+                                    <ul>
+                                        <li>Манхва створюється у <strong>Південній Кореї</strong>.</li>
+                                        <li>Більшість сучасних манхв публікуються у цифровому форматі як <strong>вебтуни</strong> (webtoon) — це вертикальні комікси, які зручно читати на смартфонах.</li>
+                                        <li>Читання відбувається <b>зверху вниз</b>, на відміну від японської манґи, яку читають справа наліво.</li>
+                                        <li>Сюжети дуже різноманітні: від романтики й драми до фентезі, бойовиків і трилерів.</li>
+                                        <li>Манхва часто адаптується у <strong>Дорами</strong>(корейські серіали), анімацію чи навіть ігри.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="https://hmvolumestorage.b-cdn.net/public-resources/611a3bed-7b16-4e51-881c-d700a3d95c31?optimizer=image&width=512" alt="vybery-mene-poster">
+                                </picture>
+                            </div>
+                            <a href="https://honey-manga.com.ua/book/52e6a78a-8930-4265-b0eb-f77c0dcb6b96">
+                                <h3>Обери мене</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manhua">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Маньхва</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                    <strong>Маньхва</strong> (китайською 漫画, мандр. huà) — <strong>це китайські комікси або графічні новели.</strong>
+                                        Їх часто порівнюють з японською манґою та корейською манхвою, але є свої особливості.
+                                    </p>
+                                    <h4>Основні риси:</h4>
+                                    <ul>
+                                        <li>Походження: <b>Китай, Тайвань, Гонконг.</b></li>
+                                        <li>Стиль малюнку може бути ближчим до китайського живопису, але зараз часто нагадує манґу чи манхву.</li>
+                                        <li>Маньхва може виходити як у традиційних друкованих форматах, так і в електронному вигляді.</li>
+                                        <li>Є й веб-маньхва (аналог вебтунів) — адаптовані під вертикальне читання з телефона.</li>
+                                        <li>Тематика різноманітна: бойові мистецтва <strong>(сянся, уся)</strong>, історичні сюжети, романтика, фентезі, пригоди.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/manhua/martial-peak/image/martial-peak-poster.webp" alt="вершина-бойвих-мистецтв-постер">
+                                </picture>
+                            </div>
+                            <a href="/manhua/martial-peak/page.html">
+                                <h3>Вершина бойових мистецтв</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manga">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манга</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манга</strong> (яп. 漫画) — це японські комікси.
+                                    </p>
+                                    <h4>Вона має кілька особливостей:</h4>
+                                    <ul>
+                                        <li><b>Стиль малюнку</b> — великі виразні очі, динамічні сцени, унікальна передача емоцій.</li>
+                                        <li><b>Формат читання</b> — традиційно читається з права наліво.</li>
+                                        <li><b>Різні жанри</b> — від романтики й пригод до фентезі, жахів чи наукової фантастики.</li>
+                                        <li><b>Аудиторія</b> — існують видання для дітей (кодомо), підлітків (шьонен — хлопці, шьодзьо — дівчата), дорослих (сейнен, дзьосей).</li>
+                                        <li><b>Вплив</b> — багато аніме створюються саме за манґою.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/images/one-punch-man.webp" alt="heroy-odnoho-udaru-poster">
+                                </picture>
+                            </div>
+                            <a href="https://manga.in.ua/mangas/boyovik/45-onepunchman.html">
+                                <h3>Герой одного удару</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manhwa">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манхва</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манхва</strong> (корейською: 만화) — це корейські комікси або графічні новели.
+                                        Вона є аналогом манґи (японські комікси) та маньхуа (китайські комікси).
+                                    </p>
+                                    <h4>Основні риси:</h4>
+                                    <ul>
+                                        <li>Манхва створюється у <strong>Південній Кореї</strong>.</li>
+                                        <li>Більшість сучасних манхв публікуються у цифровому форматі як <strong>вебтуни</strong> (webtoon) — це вертикальні комікси, які зручно читати на смартфонах.</li>
+                                        <li>Читання відбувається <b>зверху вниз</b>, на відміну від японської манґи, яку читають справа наліво.</li>
+                                        <li>Сюжети дуже різноманітні: від романтики й драми до фентезі, бойовиків і трилерів.</li>
+                                        <li>Манхва часто адаптується у <strong>Дорами</strong>(корейські серіали), анімацію чи навіть ігри.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/images/blusk-v-vashuch-ochach.webp" alt="blusk-v-vashuch-ochach-poster">
+                                </picture>
+                            </div>
+                            <a href="https://zenko.online/titles/786?translation=unset">
+                                <h3>Блиск у ваших очах</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manga">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манга</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манга</strong> (яп. 漫画) — це японські комікси.
+                                    </p>
+                                    <h4>Вона має кілька особливостей:</h4>
+                                    <ul>
+                                        <li><b>Стиль малюнку</b> — великі виразні очі, динамічні сцени, унікальна передача емоцій.</li>
+                                        <li><b>Формат читання</b> — традиційно читається з права наліво.</li>
+                                        <li><b>Різні жанри</b> — від романтики й пригод до фентезі, жахів чи наукової фантастики.</li>
+                                        <li><b>Аудиторія</b> — існують видання для дітей (кодомо), підлітків (шьонен — хлопці, шьодзьо — дівчата), дорослих (сейнен, дзьосей).</li>
+                                        <li><b>Вплив</b> — багато аніме створюються саме за манґою.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="https://hmvolumestorage.b-cdn.net/public-resources/8d1805f6-814a-448c-8327-4a46a216f9f8?optimizer=image&width=512" alt="kaydzhu-№8-poster">
+                                </picture>
+                            </div>
+                            <a href="https://honey-manga.com.ua/book/29f47a89-16d4-49c0-a6ca-b85f88f1ed3e">
+                                <h3>Кайджю №8</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manga">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манга</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манга</strong> (яп. 漫画) — це японські комікси.
+                                    </p>
+                                    <h4>Вона має кілька особливостей:</h4>
+                                    <ul>
+                                        <li><b>Стиль малюнку</b> — великі виразні очі, динамічні сцени, унікальна передача емоцій.</li>
+                                        <li><b>Формат читання</b> — традиційно читається з права наліво.</li>
+                                        <li><b>Різні жанри</b> — від романтики й пригод до фентезі, жахів чи наукової фантастики.</li>
+                                        <li><b>Аудиторія</b> — існують видання для дітей (кодомо), підлітків (шьонен — хлопці, шьодзьо — дівчата), дорослих (сейнен, дзьосей).</li>
+                                        <li><b>Вплив</b> — багато аніме створюються саме за манґою.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/images/fuuka.webp" alt="fuuka-poster">
+                                </picture>
+                            </div>
+                            <a href="https://manga.in.ua/mangas/budenst/78087-fuuka.html">
+                                <h3>Фуука</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manga">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манга</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манга</strong> (яп. 漫画) — це японські комікси.
+                                    </p>
+                                    <h4>Вона має кілька особливостей:</h4>
+                                    <ul>
+                                        <li><b>Стиль малюнку</b> — великі виразні очі, динамічні сцени, унікальна передача емоцій.</li>
+                                        <li><b>Формат читання</b> — традиційно читається з права наліво.</li>
+                                        <li><b>Різні жанри</b> — від романтики й пригод до фентезі, жахів чи наукової фантастики.</li>
+                                        <li><b>Аудиторія</b> — існують видання для дітей (кодомо), підлітків (шьонен — хлопці, шьодзьо — дівчата), дорослих (сейнен, дзьосей).</li>
+                                        <li><b>Вплив</b> — багато аніме створюються саме за манґою.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/images/vermillion.webp" alt="vermillion-poster">
+                                </picture>
+                            </div>
+                            <a href="https://manga.in.ua/mangas/boyovik/11-vermillion.html">
+                                <h3>Верміліон</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manga">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манга</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манга</strong> (яп. 漫画) — це японські комікси.
+                                    </p>
+                                    <h4>Вона має кілька особливостей:</h4>
+                                    <ul>
+                                        <li><b>Стиль малюнку</b> — великі виразні очі, динамічні сцени, унікальна передача емоцій.</li>
+                                        <li><b>Формат читання</b> — традиційно читається з права наліво.</li>
+                                        <li><b>Різні жанри</b> — від романтики й пригод до фентезі, жахів чи наукової фантастики.</li>
+                                        <li><b>Аудиторія</b> — існують видання для дітей (кодомо), підлітків (шьонен — хлопці, шьодзьо — дівчата), дорослих (сейнен, дзьосей).</li>
+                                        <li><b>Вплив</b> — багато аніме створюються саме за манґою.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="https://hmvolumestorage.b-cdn.net/public-resources/12d00cb2-08b5-484f-a0d6-7cd370476f9b?optimizer=image&width=512" alt="kagurabachi-poster">
+                                </picture>
+                            </div>
+                            <a href="https://honey-manga.com.ua/book/534fecd9-b0af-4ba8-8053-668c557c5b82">
+                                <h3>Каґурабачі</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manga">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манга</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манга</strong> (яп. 漫画) — це японські комікси.
+                                    </p>
+                                    <h4>Вона має кілька особливостей:</h4>
+                                    <ul>
+                                        <li><b>Стиль малюнку</b> — великі виразні очі, динамічні сцени, унікальна передача емоцій.</li>
+                                        <li><b>Формат читання</b> — традиційно читається з права наліво.</li>
+                                        <li><b>Різні жанри</b> — від романтики й пригод до фентезі, жахів чи наукової фантастики.</li>
+                                        <li><b>Аудиторія</b> — існують видання для дітей (кодомо), підлітків (шьонен — хлопці, шьодзьо — дівчата), дорослих (сейнен, дзьосей).</li>
+                                        <li><b>Вплив</b> — багато аніме створюються саме за манґою.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="https://hmvolumestorage.b-cdn.net/public-resources/29ca8e57-1f06-45a5-8ecb-961cd1bc94c9?optimizer=image&width=512" alt="lyudyna-benzopyla-poster">
+                                </picture>
+                            </div>
+                            <a href="https://honey-manga.com.ua/book/524653f6-43a3-422b-adc5-e8c7bb5a8f3b">
+                                <h3>Людина бензопила</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manhwa">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манхва</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манхва</strong> (корейською: 만화) — це корейські комікси або графічні новели.
+                                        Вона є аналогом манґи (японські комікси) та маньхуа (китайські комікси).
+                                    </p>
+                                    <h4>Основні риси:</h4>
+                                    <ul>
+                                        <li>Манхва створюється у <strong>Південній Кореї</strong>.</li>
+                                        <li>Більшість сучасних манхв публікуються у цифровому форматі як <strong>вебтуни</strong> (webtoon) — це вертикальні комікси, які зручно читати на смартфонах.</li>
+                                        <li>Читання відбувається <b>зверху вниз</b>, на відміну від японської манґи, яку читають справа наліво.</li>
+                                        <li>Сюжети дуже різноманітні: від романтики й драми до фентезі, бойовиків і трилерів.</li>
+                                        <li>Манхва часто адаптується у <strong>Дорами</strong>(корейські серіали), анімацію чи навіть ігри.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/images/omniscient-reader.png" alt="omniscient-reader-poster">
+                                </picture>
+                            </div>
+                            <a href="https://manga.in.ua/mangas/boyovik/4675-omniscient-reader.html">
+                                <h3>Всезнаючий читач</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manhwa">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манхва</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манхва</strong> (корейською: 만화) — це корейські комікси або графічні новели.
+                                        Вона є аналогом манґи (японські комікси) та маньхуа (китайські комікси).
+                                    </p>
+                                    <h4>Основні риси:</h4>
+                                    <ul>
+                                        <li>Манхва створюється у <strong>Південній Кореї</strong>.</li>
+                                        <li>Більшість сучасних манхв публікуються у цифровому форматі як <strong>вебтуни</strong> (webtoon) — це вертикальні комікси, які зручно читати на смартфонах.</li>
+                                        <li>Читання відбувається <b>зверху вниз</b>, на відміну від японської манґи, яку читають справа наліво.</li>
+                                        <li>Сюжети дуже різноманітні: від романтики й драми до фентезі, бойовиків і трилерів.</li>
+                                        <li>Манхва часто адаптується у <strong>Дорами</strong>(корейські серіали), анімацію чи навіть ігри.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="/images/profesor-academii-pid-prukrutam.webp" alt="profesor-academii-pid-prukrutam-poster">
+                                </picture>
+                            </div>
+                            <a href="https://zenko.online/titles/1427?translation=unset">
+                                <h3>Професор академії під <br>прикриттям</h3>
+                            </a>
+                        </div>
+                        <div class="item-box" data-category="manhwa">
+                            <dl class="type-story-btn">
+                                <dt onclick="toggleTypeDescription(this)">Манхва</dt>
+                                <dd class="typeDescription">
+                                    <p>
+                                        <strong>Манхва</strong> (корейською: 만화) — це корейські комікси або графічні новели.
+                                        Вона є аналогом манґи (японські комікси) та маньхуа (китайські комікси).
+                                    </p>
+                                    <h4>Основні риси:</h4>
+                                    <ul>
+                                        <li>Манхва створюється у <strong>Південній Кореї</strong>.</li>
+                                        <li>Більшість сучасних манхв публікуються у цифровому форматі як <strong>вебтуни</strong> (webtoon) — це вертикальні комікси, які зручно читати на смартфонах.</li>
+                                        <li>Читання відбувається <b>зверху вниз</b>, на відміну від японської манґи, яку читають справа наліво.</li>
+                                        <li>Сюжети дуже різноманітні: від романтики й драми до фентезі, бойовиків і трилерів.</li>
+                                        <li>Манхва часто адаптується у <strong>Дорами</strong>(корейські серіали), анімацію чи навіть ігри.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="item-box-poster">
+                                <picture>
+                                    <img src="https://hmvolumestorage.b-cdn.net/public-resources/e576295e-c7b8-4e76-889e-e21f20713ed9?optimizer=image&width=512" alt="pomsta-kryvavoho-mecha-poster">
+                                </picture>
+                            </div>
+                            <a href="https://honey-manga.com.ua/book/75f5cf10-388f-46d4-a927-6727ca733255">
+                                <h3>Помста кривавого меча</h3>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav-site">
+
+                    <div class="footer-logo-site">
+                        <a href="/index.html">
+                            <picture>
+                                <img src="/images/ui/logo-site.svg" alt="logo-site">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <ul class="footer-nav-site-list">
+                        <li>
+                            <a href="/pages/about.html">
+                                <img src="/images/ui/briefcase-white.svg" alt="about-icon">
+                                <span>Про нас</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/articles.html">
+                                <img src="/images/ui/journal-richtext.svg" alt="articles-icon">
+                                <span>Форум</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/contacts.html">
+                                <img src="/images/ui/send.svg" alt="contacs-icons">
+                                <span>Зв'язок з нами</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/gallery.html">
+                                <img src="/images/ui/union.svg" alt="gallery-icon">
+                                <span>Арт галерея</span></a>
+                        </li>
+                        <li><a href="/pages/katalog.html">
+                                <img src="/images/ui/funnel.svg" alt="katalog-icon">
+                                <span>Каталог</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="contacs-list">
+                        <li>
+                            <a href="mailto:art.studios.ua@gmail.com">
+                                <img src="/images/ui/envelope.svg" alt="envelope-icon">
+                                <span>art.studios.ua@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+48888634473">
+                                <img src="/images/ui/telephone.svg" alt="telephone-icon">
+                                <span>+48888634473</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+                <ul class="social-contacs-list">
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="/images/ui/telegram.svg" alt="telegram-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="/images/ui/instagram.svg" alt="instagram-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="/images/ui/discord.svg" alt="discord-icon">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer-info-p">
+                    2025 &copy; StoryForge. Усі права захищенні.
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/general.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+  background-color: #373737;
+}
+.katalog-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.filter{
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 10px;
+}
+.filter button{
+    background-color: #f79f23;
+    padding: 8px 16px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+
+}
+.filter hr{
+    border: 4px double #01c2af;
+    width: 400px;
+}
+.item-box{
+    margin-top: 50px;
+}
+.item-box-poster img{
+    width: 320px;
+    height: 454px;
+    border-radius: 8px;
+}
+.item-box h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.type-story-btn dt{
+    display: flex;
+    justify-content: center;
+    width: 74px;
+    position: absolute;
+    font-family: "Raleway",
+        sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 2;
+    transform: translate(20px , 16px);
+    color: #000;
+    background-color: #01c2af;
+    /* background-color: rgb(224, 148, 41, 0.8); */
+    border: none;
+    padding: 4px 4px;
+    border-radius: 6px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.type-story-btn dd{
+    display: none;
+    width: 340px;
+    flex-wrap: wrap;
+    background-color: rgb(11, 11, 11, 0.8);
+    position: absolute;
+    padding: 40px;
+    font-size: 14px;
+    border-radius:0px 20px 20px 20px;
+    z-index: 1;
+    transform: translate(24px , 22px);
+}
+.type-story-btn dd p, h4, li{
+    margin-top: 10px;
+}

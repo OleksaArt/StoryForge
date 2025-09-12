@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color:#fff;
+    font-family: "Marmelad", sans-serif;
+    background-color: #000;
+}
+fieldset{
+    border: none;
+    display: grid;
+    justify-content: center;
+}
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.login-form-box{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.register-form-box {
+    display: none;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.logo-site img{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.login-form,
+.register-form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: #000;
+}
+input{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background: none;
+    padding: 12px ;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    color: #f79f23;
+    transition: border-color, 0.8s;
+    outline: none;
+}
+input:hover{
+    border-color: #FB6212;
+}
+input:active{
+    border-color: #FB6212;
+}
+input::placeholder{
+    color:#fff;
+    font-family: "Marmelad" , sans-serif;
+}
+button[type="submit"]{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 340px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: #ffa500;
+    border: none;
+    transition: backgroud-color, 0.8s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ff8c00;
+}
+a{
+    color: #ffa500;
+    transition: color 0.8s;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff8c00;
+}
+.register-form p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+.controller-btn{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 8px;
+}
+.controller-btn button{
+    background: none;
+    color: #ffa500;
+    border: none;
+    align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+    transition: color 0.8s;
+}
+.controller-btn button:hover{
+    color: #ff8c00;
+}
