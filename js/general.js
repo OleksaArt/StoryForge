@@ -1,4 +1,6 @@
-        
+    let bookmarkList = document.querySelector('.bookmarks-list');
+    let pageInfoBox = document.querySelector('.main-page-info-chapter-box');
+    let storyChaptersBox = document.querySelector('.story-chapters-box');   
     let Slide = document.querySelectorAll('.sliders .slider-box');
     let prevBtnSlider = document.querySelector('.prev-slider-btn');
     let nextBtnSlider = document.querySelector('.next-slider-btn');
@@ -55,3 +57,22 @@
 
         filterItems(category, genre); // твоя функція фільтрації
     });
+
+    function openMainPageInfoBox(){
+
+        pageInfoBox.style.display = 'block';
+        storyChaptersBox.style.display = 'none';
+    };
+    function openStoryChaptersBox(){
+
+        storyChaptersBox.style.display = 'block';
+        pageInfoBox.style.display = 'none';
+    };
+
+    function openBookmarkList(){
+
+        bookmarkList.style.display = 'block';
+    };
+    function chanelBookmarkList(){
+        bookmarkList.style.display = 'none';
+    };

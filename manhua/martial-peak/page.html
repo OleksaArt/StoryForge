@@ -76,7 +76,7 @@
                     <div class="story-poster">
                         <img src="/manhua/martial-peak/image/martial-peak-poster.webp" alt="Вершина бойових мистецтв постер">
                     </div>
-                    <div>
+                    <div class="page-header-content-div">
                         <h1 class="story-title">Вершина бойових мистецтв</h1>
                         <ul class="story-info-list">
                             <li>
@@ -101,12 +101,17 @@
                             <span>Читати</span>
                         </a>
                         <div class="bookmark-box">
-                            <button class="btn-bokmark-list">
-                                <img src="/images/ui/bookmark.svg" alt="Зображення закладки">
+                            <button onclick="openBookmarkList()" class="btn-bokmark-list">
+                                <img src="/images/ui/bookmark-frame.svg" alt="Зображення закладки">
                                 <span>В закладинки</span>
                             </button>
-                            <ul class="bokmarks-list" style="display: none;">
-                                <li class="boolmark">
+                            <ul class="bookmarks-list">
+                                <li onclick="chanelBookmarkList()" class="chanel-btn">
+                                    <button>
+                                        <img src="/images/ui/x-circle.svg" alt="Скасовуючий значок">
+                                    </button>
+                                </li>
+                                <li class="bookmark">
                                     <button>Читаю</button>
                                 </li>
                                 <li class="bookmark">
@@ -117,7 +122,7 @@
                                 </li>
                                 <li class="btn-delite-bokmark">
                                     <button>
-                                        <img src="" alt="">
+                                        <img src="/images/ui/trash-fill.svg" alt="Значок видалення">
                                         <span>Видалити закладку</span>
                                     </button>
                                 </li>
@@ -127,11 +132,79 @@
                 </div>
             </section>
             <section class="page-main">
-                <p class="story-title">
-                    Шлях до вершини бойових мистецтв є самотній і довгий. Перед обличчям біди ви повинні вижити і залишатися непохитними. 
-                    Тільки тоді ви зможете пробитися і продовжувати свій шлях, щоб стати найсильнішим. 
-                    Небесний павільйон випробовує своїх учнів найжорсткішими способами, щоб підготувати їх до цієї подорожі.
-                </p>
+                <div class="main-page-box-control">
+                    <button onclick="openMainPageInfoBox()">Головна</button>
+                    <button onclick="openStoryChaptersBox()">Розділи</button>
+                </div>
+                <div class="main-page-info-chapter-box">
+                    <div class="main-page-content-chapter">
+                        <h2>Сюжет:</h2>
+                        <p class="story-description">
+                            Шлях до вершини бойових мистецтв є самотній і довгий. Перед обличчям біди ви повинні вижити і залишатися непохитними. 
+                            Тільки тоді ви зможете пробитися і продовжувати свій шлях, щоб стати найсильнішим. 
+                            Небесний павільйон випробовує своїх учнів найжорсткішими способами, щоб підготувати їх до цієї подорожі.
+                        </p>
+                        <h2>Жанри:</h2>
+                        <ul class="story-list-tag">
+                            <li class="tag">Фентезі</li>
+                            <li class="tag">Шьонен</li>
+                            <li class="tag">Пригоди</li>
+                            <li class="tag">Драма</li>
+                            <li class="tag">Бойові мистецтва</li>
+                            <li class="tag">Історичний</li>
+                            <li class="tag">Бойовик</li>
+                            <li class="tag">Екшн</li>
+                        </ul>
+                        <div class="users-comment-box">
+                            <h2>Коментарі</h2>
+                            <form action="#" method="post" class="form-comment">
+                                <fieldset>
+                                    <textarea name="user-comment" id="UserComment" placeholder="Напишіть коментар"></textarea>
+                                    <button type="submit">Опублікувати</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="story-info-creators-box">
+                        <ol class="story-info-creators-list">
+                            <li>
+                                <h4>Автор:</h4>
+                                <p>Momo (莫默)</p>
+                            </li>
+                            <li>
+                                <h4>Художник:</h4>
+                                <p>Pikapi</p>
+                            </li>
+                            <li>
+                                <h4>Автор перекладу</h4>
+                                <p>Олекса Тіненко</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="story-chapters-box">
+                    <h2>Розділи</h2>
+                    <ol class="story-chapters-list">
+                        <li class="chapter">
+                            <a href="/manhua/martial-peak/1-chapter.html">
+                                <img src="/manhua/martial-peak/image/1-chapter-img.jpg" alt="Значок розділу">
+                                <h3>Розідл 1 - Учень який підмітає</h3>
+                            </a>
+                        </li>
+                        <li class="chapter">
+                            <a href="#">
+                                <img src="/manhua/martial-peak/image/2-chapter-img.jpg" alt="Значок розділу">
+                                <h3>Розділ 2 - Попри все йти в перед</h3>
+                            </a>
+                        </li>
+                        <li class="chapter">
+                            <a href="#">
+                                <img src="/manhua/martial-peak/image/3-chapter-img.jpg" alt="Значок розділу">
+                                <h3>Розділ 3 - 147 поразок</h3>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
             </section>
         </div>
     </main>
@@ -216,5 +289,6 @@
             </div>
         </div>
     </footer>
+    <script src="/js/general.js"></script>
 </body>
 </html>
