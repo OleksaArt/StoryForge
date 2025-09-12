@@ -1,294 +1,291 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      class="favicon"
-      rel="icon"
-      type="image/xml+svg"
-      href="/client/public/images/ui/logo-favicon.svg"
-    />
-    <link rel="stylesheet" href="/client/public/css/page.css" />
-    <link rel="stylesheet" href="/client/public/css/general.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/page.css">
+    <link class="favicon" rel="icon" type="image/svg+xml" href="/images/ui/logo-favicon.svg">
     <title>StoryForge - Король гробниць</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-content">
-          <nav class="nav-site">
-            <div class="logo-site">
-              <a href="/index.html">
-                <img
-                  src="/client/public/images/ui/logo-site.svg"
-                  alt="logo-site"
-                />
-              </a>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="nav-site">
+                    <div class="logo-site">
+                        <a href="/index.html">
+                            <picture>
+                                <img src="/images/ui/logo-site.svg" alt="logo-site">
+                            </picture>
+                        </a>
+                    </div>
+                    <ul class="nav-site-list">
+                        <li>
+                            <a href="/pages/about.html">
+                                <img src="/images/ui/briefcase-white.svg" alt="about-icon">
+                                <span>Про нас</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/articles.html">
+                                <img src="/images/ui/journal-richtext.svg" alt="articles-icon">
+                                <span>Форум</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/contacts.html">
+                                <img src="/images/ui/send.svg" alt="contacs-icons">
+                                <span>Контакти</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/gallery.html">
+                                <img src="/images/ui/union.svg" alt="gallery-icon">
+                                <span>Арт галерея</span></a>
+                        </li>
+                        <li><a href="/pages/katalog.html">
+                                <img src="/images/ui/funnel.svg" alt="katalog-icon">
+                                <span>Каталог</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-user">
+                    <form action="#" method="get" class="search-form">
+                        <fieldset>
+                            <div class="search-box">
+                                <input type="search" placeholder="Введіть пошуковий запит">
+                                <img src="/images/ui/search-icon.svg" alt="search-icon">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="user-box">
+                        <a href="/pages/signin.html" class="btn-user-signin">
+                            <img src="/images/ui/person.svg" alt="signin-icon">
+                        </a>
+                    </div>
+                </nav>
             </div>
-            <a class="nav-site-element" href="#">
-              <img
-                src="/client/public/images/ui/grid-white.svg"
-                alt="grid-icon"
-              />
-              <p>Каталог</p>
-            </a>
-            <a class="nav-site-element" href="#">
-              <img
-                src="/client/public/images/ui/briefcase-white.svg"
-                alt="briefcase-icon"
-              />
-              <p>Про нас</p>
-            </a>
-          </nav>
-          <nav class="nav-user">
-            <div class="search">
-              <button onclick="openSearchBox()" class="btn-search">
-                <p>Пошук...</p>
-                <img
-                  src="/client/public/images/ui/search-icon.svg"
-                  alt="search-icon"
-                />
-              </button>
-              <div id="searchBox" class="modal-search-box">
-                <div class="modal-search-box-content">
-                  <span onclick="closeSearchBox()" class="close">&times;</span>
-                  <input
-                    id="search"
-                    type="search"
-                    placeholder="Введіть назву"
-                  />
-                </div>
-                <div id="suggestions" class="search-result"></div>
-              </div>
-            </div>
-            <div class="user">
-              <a href="/client/public/signin.html" class="signin-btn">
-                <!-- <p class="signin-btn-p">Вхід</p> -->
-                <img
-                  src="/client/public/images/ui/person.svg"
-                  alt="signin-icon"
-                  class="signin-btn-img"
-                />
-              </a>
-            </div>
-          </nav>
         </div>
-      </div>
     </header>
     <main>
-      <div class="container">
-        <section class="webnovel-page">
-          <div class="webnovel-poster">
-            <div class="poster">
-              <img
-                src="/client/public/manhwa/tomb-raider-king/image/tomb-raider-king-poster.jpg"
-                alt="tomb-raider-king-poster"
-              />
-            </div>
-            <h1 class="webnovel-title">Король гробниць</h1>
-            <a
-              class="read-btn"
-              href="/client/public/manhwa/tomb-raider-king/1-chapter.html"
-            >
-              <img
-                src="/client/public/images/ui/book-half.svg"
-                alt="book-half-icon"
-              />
-              <span>Читати</span>
-            </a>
-            <button onclick="openBookmarksBox()" class="btn-bookmark">
-              <img
-                src="/client/public/images/ui/bookmark.svg"
-                alt="bookmark-icon"
-              />
-              <span>В закладинки</span>
-            </button>
-            <div class="bookmarks-box">
-              <button>Читаю</button>
-              <button>Планую прочитати</button>
-              <button>Прочитано</button>
-              <button>Відкладено</button>
-              <button>Видалити закладку</button>
-            </div>
-          </div>
-          <div class="webnovel-content">
-            <div class="controller-box">
-              <button onclick="openChaptersBox()" class="btn-chapters">
-                Розділи
-              </button>
-              <button onclick="openStoryBox()" class="btn-story">Сюжет</button>
-            </div>
-            <div class="chapters-box">
-              <ul class="chapters-list">
-                <li class="chapter">
-                  <a
-                    href="/client/public/manhwa/tomb-raider-king/1-chapter.html"
-                  >
-                    <img
-                      src="/client/public/manhwa/tomb-raider-king/image/1-chapter-img.png"
-                      alt="chapter-icon"
-                    />
-                    <span>Розділ 1</span>
-                  </a>
-                </li>
-                <li class="chapter">
-                  <a href="#">
-                    <img
-                      src="/client/public/manhwa/tomb-raider-king/image/2-chapter-img.png"
-                      alt="chapter-icon"
-                    />
-                    <span>Розділ 2</span>
-                  </a>
-                </li>
-                <li class="chapter">
-                  <a href="#">
-                    <img
-                      src="/client/public/manhwa/tomb-raider-king/image/3-chapter-img.png"
-                      alt="chapter-icon"
-                    />
-                    <span>Розділ 3</span>
-                  </a>
-                </li>
-                <li class="chapter">
-                  <a href="#">
-                    <img
-                      src="/client/public/manhwa/tomb-raider-king/image/4-chapter-img.png"
-                      alt="chapter-icon"
-                    />
-                    <span>Розділ 4</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="story-box">
-              <div class="description">
-                <h3>Сюжет</h3>
-                <p>
-                  Божественні гробниці у сучасному світі. Люди, які
-                  використовують здібності героїв за допомогою реліквій. А також
-                  загадковий розкрадач гробниць, що з'явився з нізвідки. «Ах, з
-                  глузду з'їхати! І тут він теж усе обчистив! Те, що було твоїм,
-                  – моє. Те, що було моїм, звісно ж, ​​моє! Новий розкрадач
-                  гробниць розпочав полювання на всі реліквії цього світу!
-                </p>
-              </div>
-              <div class="tags-box">
-                <h3>Жанри</h3>
-                <ul class="tags-list">
-                  <li class="tag">Фентезі</li>
-                  <li class="tag">Пригоди</li>
-                  <li class="tag">Сейнен</li>
-                  <li class="tag">Надприродне</li>
-                </ul>
-              </div>
-              <table class="info-webnovel">
-                <tr>
-                  <th>Статус проекту</th>
-                  <td>Завершено</td>
-                </tr>
-                <tr>
-                  <th>Тип</th>
-                  <td>Манхва</td>
-                </tr>
-                <tr>
-                  <th>Кількість розділів</th>
-                  <td>54 із 412</td>
-                </tr>
-                <tr>
-                  <th>Рік</th>
-                  <td>2019</td>
-                </tr>
-                <tr>
-                  <th>Автор</th>
-                  <td>Санджі Джіксонг</td>
-                </tr>
-                <tr>
-                  <th>Художник</th>
-                  <td>
-                    2B2S у співпраці з <br />
-                    <a href="https://www.red-ice.me/en/">Redice Studios</a>
-                  </td>
-                </tr>
-              </table>
-              <div class="comments-box">
-                <h3>Коментарі</h3>
-                <form id="comment-form" action="#">
-                  <textarea
-                    name="text"
-                    id="comment-text"
-                    placeholder="Напишіть коментар..."
-                    required
-                  ></textarea>
-                  <button type="submit">Опублікувати</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        <div class="container">
+            <section class="page-header">
+                <div class="page-header-content">
+                    <div class="story-poster">
+                        <img src="/manhwa/tomb-raider-king/image/tomb-raider-king-poster.webp" alt="Король гробниць постер">
+                    </div>
+                    <div class="page-header-content-div">
+                        <h1 class="story-title">Король гробниць</h1>
+                        <ul class="story-info-list">
+                            <li>
+                                <h3>Тип</h3>
+                                <p>Манхва</p>
+                            </li>
+                            <li>
+                                <h3>Рік</h3>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <h3>Кількість розділів</h3>
+                                <p>50 з 412</p>
+                            </li>
+                            <li>
+                                <h3>Статус</h3>
+                                <p>Завершений</p>
+                            </li>
+                        </ul>
+                        <a href="/manhua/martial-peak/1-chapter.html" class="btn-reade-story">
+                            <img src="/images/ui/book-half.svg" alt="Зображення розгорнотої книги">
+                            <span>Читати</span>
+                        </a>
+                        <div class="bookmark-box">
+                            <button onclick="openBookmarkList()" class="btn-bokmark-list">
+                                <img src="/images/ui/bookmark-frame.svg" alt="Зображення закладки">
+                                <span>В закладинки</span>
+                            </button>
+                            <ul class="bookmarks-list">
+                                <li onclick="chanelBookmarkList()" class="chanel-btn">
+                                    <button>
+                                        <img src="/images/ui/x-circle.svg" alt="Скасовуючий значок">
+                                    </button>
+                                </li>
+                                <li class="bookmark">
+                                    <button>Читаю</button>
+                                </li>
+                                <li class="bookmark">
+                                    <button>Читатиму</button>
+                                </li>
+                                <li class="bookmark">
+                                    <button>Відкладено</button>
+                                </li>
+                                <li class="btn-delite-bokmark">
+                                    <button>
+                                        <img src="/images/ui/trash-fill.svg" alt="Значок видалення">
+                                        <span>Видалити закладку</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-main">
+                <div class="main-page-box-control">
+                    <button onclick="openMainPageInfoBox()">Головна</button>
+                    <button onclick="openStoryChaptersBox()">Розділи</button>
+                </div>
+                <div class="main-page-info-chapter-box">
+                    <div class="main-page-content-chapter">
+                        <h2>Сюжет:</h2>
+                        <p class="story-description">
+                            Божественні гробниці у сучасному світі. Люди, які використовують здібності героїв за допомогою реліквій. 
+                            А також загадковий розкрадач гробниць, що з'явився з нізвідки. «Ах, з глузду з'їхати! І тут він теж усе обчистив! Те, що було твоїм, – моє. 
+                            Те, що було моїм, звісно ж, ​​моє! Новий розкрадач гробниць розпочав полювання на всі реліквії цього світу!
+                        </p>
+                        <h2>Жанри:</h2>
+                        <ul class="story-list-tag">
+                            <li class="tag">Фентезі</li>
+                            <li class="tag">Сейнен</li>
+                            <li class="tag">Пригоди</li>
+                            <li class="tag">Надприродне</li>
+                            <li class="tag">Екшн</li>
+                        </ul>
+                        <div class="users-comment-box">
+                            <h2>Коментарі</h2>
+                            <form action="#" method="post" class="form-comment">
+                                <fieldset>
+                                    <textarea name="user-comment" id="UserComment" placeholder="Напишіть коментар"></textarea>
+                                    <button type="submit">Опублікувати</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="story-info-creators-box">
+                        <ol class="story-info-creators-list">
+                            <li>
+                                <h4>Автор:</h4>
+                                <p>Sanji Jiksong</p>
+                            </li>
+                            <li>
+                                <h4>Художник:</h4>
+                                <p>3B2S (Redice Studio)</p>
+                            </li>
+                            <li>
+                                <h4>Автор перекладу</h4>
+                                <p>Олекса Тіненко</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="story-chapters-box">
+                    <h2>Розділи</h2>
+                    <ol class="story-chapters-list">
+                        <li class="chapter">
+                            <a href="/manhwa/tomb-raider-king/1-chapter.html">
+                                <img src="/manhwa/tomb-raider-king/image/1-chapter-img.png" alt="Значок розділу">
+                                <h3>Розідл 1 - Відродження розкрадача гробниць</h3>
+                            </a>
+                        </li>
+                        <li class="chapter">
+                            <a href="#">
+                                <img src="/manhwa/tomb-raider-king/image/2-chapter-img.png" alt="Значок розділу">
+                                <h3>Розділ 2 - Поява гробниці</h3>
+                            </a>
+                        </li>
+                        <li class="chapter">
+                            <a href="#">
+                                <img src="/manhwa/tomb-raider-king/image/3-chapter-img.png" alt="Значок розділу">
+                                <h3>Розділ 3 - Лас Вегас</h3>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <nav class="footer-nav-site">
-            <div class="footer-logo-site">
-              <img
-                src="/client/public/images/ui/logo-site.svg"
-                alt="logo-site"
-              />
-            </div>
-            <div class="feedback">
-              <h4>Зв'язок з нами</h4>
-              <a href="mailto:art.studios.ua@gmail.com"
-                >art.studios.ua@gmail.com</a
-              >
-            </div>
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav-site">
 
-            <!-- <a href="#">
-                        <p class="nav-site-p">|Каталог</p>
-                    </a>
-                    <a href="#">
-                        <p class="nav-site-p">|Про нас</p>
-                    </a> -->
-          </nav>
-          <p class="footer-nav-site-p">
-            VisualQuest 2025© - поразка це лише туман що приховує шлях до
-            перемоги. <br />
-            Всі права захищенні .
-          </p>
-          <!-- <nav class="nav-user">
-                    <div class="search">
-                        <input id="search" name="search" type="search" placeholder="Введіть пошуковий запит">
-                        <img src="/images/search-icon.svg" alt="search-icon" class="search-icon">
+                    <div class="footer-logo-site">
+                        <a href="/index.html">
+                            <picture>
+                                <img src="/images/ui/logo-site.svg" alt="logo-site">
+                            </picture>
+                        </a>
                     </div>
-                    <div class="user">
-                        <button class="signin-btn">
-                            <p class="signin-btn-p">Вхід</p>
-                            <img src="/images/signin.svg" alt="signin-icon" class="signin-btn-img">
-                        </button>
-                    </div>
-                </nav> -->
+
+                    <ul class="footer-nav-site-list">
+                        <li>
+                            <a href="/pages/about.html">
+                                <img src="/images/ui/briefcase-white.svg" alt="about-icon">
+                                <span>Про нас</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/articles.html">
+                                <img src="/images/ui/journal-richtext.svg" alt="articles-icon">
+                                <span>Форум</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/contacts.html">
+                                <img src="/images/ui/send.svg" alt="contacs-icons">
+                                <span>Зв'язок з нами</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/gallery.html">
+                                <img src="/images/ui/union.svg" alt="gallery-icon">
+                                <span>Арт галерея</span></a>
+                        </li>
+                        <li><a href="/pages/katalog.html">
+                                <img src="/images/ui/funnel.svg" alt="katalog-icon">
+                                <span>Каталог</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="contacs-list">
+                        <li>
+                            <a href="mailto:art.studios.ua@gmail.com">
+                                <img src="/images/ui/envelope.svg" alt="envelope-icon">
+                                <span>art.studios.ua@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+48888634473">
+                                <img src="/images/ui/telephone.svg" alt="telephone-icon">
+                                <span>+48888634473</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+                <ul class="social-contacs-list">
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="/images/ui/telegram.svg" alt="telegram-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="/images/ui/instagram.svg" alt="instagram-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="/images/ui/discord.svg" alt="discord-icon">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer-info-p">
+                    2025 &copy; StoryForge. Усі права захищенні.
+            </div>
         </div>
-      </div>
     </footer>
-    <script>
-      let chaptersBox = document.querySelector(".chapters-box");
-      let storyBox = document.querySelector(".story-box");
-      let bookmarksBox = document.querySelector(".bookmarks-box");
-      function openBookmarksBox() {
-        window.alert(
-          "Наданий момент ця функція знаходиться на етапі розробки!"
-        );
-      }
-      function openChaptersBox() {
-        chaptersBox.style.display = "block";
-        storyBox.style.display = "none";
-      }
-      function openStoryBox() {
-        chaptersBox.style.display = "none";
-        storyBox.style.display = "block";
-      }
-    </script>
-  </body>
+    <script src="/js/general.js"></script>
+</body>
 </html>
