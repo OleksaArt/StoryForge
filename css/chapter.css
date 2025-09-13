@@ -1,0 +1,60 @@
+
+.home-page-story-box img{
+    width: 44px;
+}
+.nav-site h1{
+    font-size: 22px;
+    margin-left: 12px;
+}
+.nav-story,
+.nav-story a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.chapter-page-list li img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.footer-chapter-story{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #0b0a0b;
+    padding: 20px 40px;
+    border-radius: 0px 0px 8px 8px;
+    margin-bottom: 80px;
+}
+.btn-nav-header,
+.like-btn{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f79f23;
+    border-radius: 8px;
+    padding: 8px 16px;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-nav-header{
+    margin-left: 20px;
+}
+.like-btn img{
+    width: 24px;
+}
+.footer-nav-story a,
+.footer-nav-story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    font-size: 18px;
+    font-weight: 600;
+}
