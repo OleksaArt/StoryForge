@@ -60,7 +60,7 @@
 
     function openMainPageInfoBox(){
 
-        pageInfoBox.style.display = 'block';
+        pageInfoBox.style.display = 'flex';
         storyChaptersBox.style.display = 'none';
     };
     function openStoryChaptersBox(){
